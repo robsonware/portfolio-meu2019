@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Mostra de Estágios Universitária do Estado do Rio de Janeiro">
+	<meta name="keywords" content="mostra, amostra, estágio, trainee, trabalho, emprego, entrevista, oportunidadade">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="css/app.css" rel="stylesheet">
+	
+	<title>Mostra de Estágios Universitária</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="gtag/js?id=UA-148877476-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-148877476-1');
+	</script>
+
+</head>
+
+<body class="bgc-1 is-unselectable">
+	<main class="container">
+	
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-4 is-offset-4">
+                <h3 class="title has-text-grey">Suporte</h3>
+                <p class="subtitle has-text-grey">...</p>
+
+
+                <div class="box">
+                    <i class="far fa-envelope big-icon"></i>
+
+                    <form method="post" action="http://localhost:8000/suporte">
+                        <input type="hidden" name="_token" value="BNZhZlgqHACHkZzRrMwlhrdJ7AdgFDjCaKY2kdzH">
+                        <p>Precisando de ajuda ou de alguma informação? Utilize o formulário abaixo.</p>
+
+                        <br>
+
+                        <div class="field">
+                            <div class="select is-fullwidth">
+                                <select name="tipo_solicitacao" autofocus="" required="">
+                                    <option value="">Tipo solicitação:</option>
+                                    <option value="DUVIDAS_GERAIS">Dúvidas gerais</option>
+                                    <option value="ATIVICAO_CONTA">Ativação da conta</option>
+                                    <option value="AUTORIZACAO_CONTA_EMPRESA">Autorização de conta (empresas)</option>
+                                    <option value="REMOCAO_DADOS_PESSOAIS">Remoção de dados pessoais (Lei 13.709)</option>
+                                    <option value="OUTROS">Outros</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field">
+                                    <div class="control">
+                                        <input name="nome" type="text" class="input" placeholder="Nome completo" title="Digite seu nome completo" autocomplete="name" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="field">
+                                    <div class="control">
+                                        <input name="email" type="email" class="input" placeholder="Email" title="Informe seu email" autocomplete="email" required="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <textarea name="descricao_solicitacao" class="textarea" rows="2" placeholder="Descreva de forma mais detalhada sua solicitação..." required=""></textarea>
+                        </div>
+
+                        <br>
+
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <p class="control">
+                                    <a href="index.htm" class="button is-link is-medium is-outlined is-info is-fullwidth" title="Voltar para página inicial"><i class="fas fa-chevron-left"></i></a>
+                                </p>
+                            </div>
+                            <div class="column is-8">
+                                <p class="control">
+                                    <button class="button is-primary is-medium is-fullwidth" type="submit">Solicitar</button>
+                                </p>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <br>
+
+                <p class="has-text-grey">
+                    <a href="login.html" title="Efetuar login">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+	</main>
+
+	<script src="js/app.js" defer=""></script>
+</body>
+</html>
